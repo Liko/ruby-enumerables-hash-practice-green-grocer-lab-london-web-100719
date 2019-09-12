@@ -68,5 +68,5 @@ cart = {
 }
 
 apply_coupons(cart, coupons)
-apply_clerance(cart)
+apply_clearance(cart)
 checkout(cart, coupons)
