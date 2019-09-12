@@ -25,8 +25,8 @@ def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
     puts coupon.values.first #AVOCADO
-    puts 
-    if coupon.values.f
+    puts coupon.values.second
+
   end 
 
   
