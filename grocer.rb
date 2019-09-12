@@ -64,9 +64,6 @@ def checkout(cart, coupons)
   if total > 100
     total *= 0.9
   end 
-  
-  
-  puts cart1
 end
 
 coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
