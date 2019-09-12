@@ -15,8 +15,6 @@ def consolidate_cart(cart_array)
      
     end   
     
-    puts cart_hash
-    
   end   
 end
 
