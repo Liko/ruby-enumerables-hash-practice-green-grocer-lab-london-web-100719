@@ -24,8 +24,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     puts coupon.values.first
   end 
-  
-  puts coupons[0].values.first
+
   
   puts cart
   
