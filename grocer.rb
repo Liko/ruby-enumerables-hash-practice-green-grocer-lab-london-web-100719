@@ -37,10 +37,6 @@ def apply_coupons(cart, coupons)
       
       cart[coupon_item][:count] = (cart[coupon_item][:count] % coupon_num)
       
-      puts adjusted_item
-      puts adjusted_num
-      puts adjusted_cost
-      
       cart[adjusted_item] = {
         price: adjusted_cost,
         clearence: true,
