@@ -2,12 +2,11 @@ def consolidate_cart(cart)
   cart_hash = {}
   
   cart.each do |item|
-    item_name = item.keys.first 
     
-    if cart_hash[item_name]
-      cart_hash[item_name][:count] += 1 
+    if cart_hash[item.keys.first]
+      cart_hash[item.keys.first][:count] += 1 
     else 
-      cart_hash[item_name] = {
+      cart_hash[item.keys.first] = {
         price: item.values.first[:price],
         clearance: item.values.first[:clearance],
         count: 1
