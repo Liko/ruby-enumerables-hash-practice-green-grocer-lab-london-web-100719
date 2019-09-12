@@ -25,7 +25,12 @@ def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
     puts coupon.values.first #AVOCADO
+    coupon_item = coupon.values[0]
+    coupon_num = coupon.values[1]
+    coupon_cost = coupon.values[2]
+    
     puts coupon.values[1]
+    if coupon.values[1]
 
   end 
 
