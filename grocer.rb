@@ -31,7 +31,7 @@ def apply_coupons(cart, coupons)
     if (cart[coupon_item][:count] >= coupon_num)
       #apply coupon
       
-      adjusted_item = coupon_item + "W/COUPON"
+      adjusted_item = coupon_item + " W/COUPON"
       adjusted_price = coupon_cost.to_f / coupon_item.to_f
       
       puts adjusted_item
