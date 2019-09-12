@@ -24,7 +24,7 @@ def apply_coupons(cart, coupons)
   #with these items, check if the count in basket is at least equal to num in coupon, if so, apply the coupon, if not, check the next items
   
   coupons.each do |coupon|
-    coupon_item = coupon.values[0]
+    coupon_item = coupon[:item]
     coupon_num = coupon[:num]
     coupon_cost = coupon[:cost]
     
