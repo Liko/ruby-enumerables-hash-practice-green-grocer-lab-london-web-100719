@@ -57,7 +57,7 @@ def checkout(cart, coupons)
   discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
   total = 0 
   
-  discounted_cart.
+  puts discounted_cart
 end
 
 coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
