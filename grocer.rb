@@ -73,4 +73,4 @@ cart = [
   {"KALE"    => {:price => 3.00, :clearance => false}}
 ]
 
-consolidate_cart
+consolidate_cart(cart)
