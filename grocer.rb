@@ -40,6 +40,8 @@ def apply_coupons(cart, coupons)
       puts adjusted_item
       puts adjusted_num
       puts adjusted_cost
+      
+      puts adjusted_original_num
     end
 
     
