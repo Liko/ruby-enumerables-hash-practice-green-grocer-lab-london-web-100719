@@ -4,7 +4,7 @@ def consolidate_cart(cart_array)
   cart_array.length.times do |item|
     #add each item to the cart_hash, and add a count key:value to the hash. if it is the first time, add it with quantity is 1. for each time, check if it is the first time or not, and if it is not the first time, simply update the count.
     cart_item = cart_array[item]
-    cart_item_key = cart_item.keys.first
+    cart_item_key = cart_item.keys
     cart_item_value = cart_item.values
     
     puts "key"
