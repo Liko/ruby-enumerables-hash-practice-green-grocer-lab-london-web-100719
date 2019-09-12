@@ -28,7 +28,7 @@ def apply_coupons(cart, coupons)
     coupon_num = coupon.values[1]
     coupon_cost = coupon.values[2]
     cart.each do |item|
-      item_name = item.key[0]
+      item_name = item.keys[0]
       puts item_name
     end 
     
