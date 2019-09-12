@@ -58,7 +58,7 @@ def checkout(cart, coupons)
   cart1 = consolidate_cart(cart)
   total = 0 
   
-  puts discounted_cart
+  puts cart1
 end
 
 coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
