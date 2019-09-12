@@ -4,8 +4,8 @@ def consolidate_cart(cart)
   cart.each do |item|
     
     
-    
-    if cart_hash[item.keys][0]
+     puts 
+    if cart_hash[item.keys.first]
       cart_hash[item.keys.first][:count] += 1 
     else 
       cart_hash[item.keys.first] = {
