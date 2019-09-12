@@ -40,6 +40,7 @@ def apply_coupons(cart, coupons)
             count: clearance_num
           }
         end
+      end
     end
   end 
   cart
