@@ -35,7 +35,7 @@ def apply_coupons(cart, coupons)
       adjusted_num = (cart[coupon_item][:count] / coupon_num) * coupon_num
       adjusted_cost = coupon_cost / coupon_num
       
-      adjusted_original_num = (cart[coupon_item][:count] % coupon_num)
+      cart[coupon_item][:count] = (cart[coupon_item][:count] % coupon_num)
       
       puts adjusted_item
       puts adjusted_num
