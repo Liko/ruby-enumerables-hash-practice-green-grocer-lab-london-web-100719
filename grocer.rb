@@ -12,10 +12,9 @@ def consolidate_cart(cart_array)
         clearance: item.values.first[:clearance],
         count: 1
       }
-     
     end   
-    
   end   
+  
   cart_hash
 end
 
