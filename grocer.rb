@@ -19,13 +19,10 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # code here
-  #check for items which also have a coupon 
-  #with these items, check if the count in basket is at least equal to num in coupon, if so, apply the coupon, if not, check the next items
   
   coupons.each do |coupon|
 
-    if (cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon[:num])
+    if (cart[coupon[:item]][:count] >= coupon[:num])
       
       adjusted_item = coupon[:item] + " W/COUPON"
       adjusted_num = (cart[coupon[:item]][:count] / coupon[:num]) * coupon[:num]
