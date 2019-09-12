@@ -48,27 +48,19 @@ def apply_clearance(cart)
   cart 
 end
 
-def checkout(cart, coupons)
-  #discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
-  discounted_cart = consolidate_cart(cart)
-  # cart2 = apply_coupons(cart1, coupons)
-  # discounted_cart = apply_clearance(cart2)
+# def checkout(cart, coupons)
+#   #discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
+#   discounted_cart = consolidate_cart(cart)
+#   # cart2 = apply_coupons(cart1, coupons)
+#   # discounted_cart = apply_clearance(cart2)
   
-  total = 0.0 
+#   total = 0.0 
   
-  discounted_cart.keys.each do |item|
-    total += discounted_cart[item][:price] * discounted_cart[item][:count]
-  end 
+#   discounted_cart.keys.each do |item|
+#     total += discounted_cart[item][:price] * discounted_cart[item][:count]
+#   end 
   
-  if total > 100
-    total *= 0.9
-  end 
-end
-
-cart = [
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"KALE"    => {:price => 3.00, :clearance => false}}
-]
-
-consolidate_cart(cart)
+#   if total > 100
+#     total *= 0.9
+#   end 
+# end
