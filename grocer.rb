@@ -36,7 +36,8 @@ def apply_coupons(cart, coupons)
       adjusted_cost = coupon_cost / coupon_num
       
       puts adjusted_item
-      puts adjusted_price
+      puts adjusted_num
+      puts adjusted_cost
     end
 
     
