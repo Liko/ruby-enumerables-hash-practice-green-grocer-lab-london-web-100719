@@ -64,3 +64,15 @@ end
 #     total *= 0.9
 #   end 
 # end
+
+def checkout(cart, coupons)
+  consolidated_cart = consolidate_cart(cart)
+  consolidated_cart_with_coupons_applied = apply_coupons(consolidated_cart, coupons)
+  consolidated_cart_with_coupons_applied_and_discounts = apply_clearance(consolidated_cart_with_coupons_applied)
+
+  total = 0.0
+  consolidated_cart_with_coupons_applied_and_discounts .keys.each do |item|
+    total += consolidated_cart_with_coupons_applied_and_discounts[item][:price] * consolidated_cart_with_coupons_applied_and_discounts[item][:count]
+  end
+  total > 100 ? (total * 0.9).round(2) : total
+end
