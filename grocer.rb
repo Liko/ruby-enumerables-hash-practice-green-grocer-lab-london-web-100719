@@ -22,7 +22,7 @@ def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
     
-    puts coupon[:item]
+    puts coupon
     puts cart
 
     if (cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon[:num])
