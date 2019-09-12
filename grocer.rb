@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     coupon_item = coupon.values[0]
     coupon_num = coupon[:num]
-    coupon_cost = coupon.values[2]
+    coupon_cost = coupon[:cost]
     
     if (cart[coupon_item] && cart[coupon_item][:count] >= coupon_num)
       
