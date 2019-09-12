@@ -29,7 +29,7 @@ def apply_coupons(cart, coupons)
     coupon_cost = coupon.values[2]
     cart.each do |item|
     
-      puts item.keys.firsr
+      puts item.keys.first
     end 
     
     
