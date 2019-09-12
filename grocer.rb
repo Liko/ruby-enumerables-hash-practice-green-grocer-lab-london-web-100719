@@ -7,11 +7,6 @@ def consolidate_cart(cart_array)
     cart_item_key = cart_item.keys.first
     cart_item_value = cart_item.values.first
     
-    puts "key"
-    puts cart_item_key 
-    puts "value"
-    puts cart_item_value 
-    
     if cart_hash[cart_item_key]
       cart_hash[cart_item_key][:count] += 1 
     else 
@@ -20,8 +15,7 @@ def consolidate_cart(cart_array)
         clearance: cart_item_value[:clearance],
         count: 1
       }
-     
-      
+    
     end   
     
     puts cart_hash
