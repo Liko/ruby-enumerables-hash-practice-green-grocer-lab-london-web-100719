@@ -24,16 +24,16 @@ def apply_coupons(cart, coupons)
 
     if (cart.keys.include?(coupon[:item]) && cart[coupon[:item]][:count] >= coupon[:num])
       
-      clearance_item = coupon[:item] + " W/COUPON"
+      clearance_item_name = coupon[:item] + " W/COUPON"
       clearance_num = (cart[coupon[:item]][:count] / coupon[:num]) * coupon[:num]
       clearance_cost = coupon[:cost] / coupon[:num]
       
       cart[coupon[:item]][:count] = (cart[coupon[:item]][:count] % coupon[:num]) #update existing
       
-      if cart[clearance_item]
-        cart[clearance_item][:count] += coupon[:num]
+      if cart[clearance_item_name]
+        cart[clearance_item_name][:count] += coupon[:num]
       else 
-        cart[clearance_item] = {
+        cart[clearance_item_name] = {
           price: clearance_cost,
           clearance: true,
           count: clearance_num
