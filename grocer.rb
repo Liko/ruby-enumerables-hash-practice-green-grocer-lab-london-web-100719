@@ -58,7 +58,7 @@ end
 coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
 
 cart = {
-  "AVOCADO" => {:price => 3.00, :clearance => true, :count => 1},
+  "AVOCADO" => {:price => 3.00, :clearance => true, :count => 3},
   "KALE"    => {:price => 3.00, :clearance => false, :count => 1}
 }
 
