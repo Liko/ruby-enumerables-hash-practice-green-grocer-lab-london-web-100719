@@ -55,13 +55,16 @@ end
 
 def checkout(cart, coupons)
   discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
+  total = 0 
+  
+  discounted_cart.
 end
 
-# coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
+coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
 
-# cart = {
-#   "AVOCADO" => {:price => 3.00, :clearance => true, :count => 3},
-#   "KALE"    => {:price => 3.00, :clearance => false, :count => 1}
-# }
+cart = {
+  "AVOCADO" => {:price => 3.00, :clearance => true, :count => 3},
+  "KALE"    => {:price => 3.00, :clearance => false, :count => 1}
+}
 
-# apply_coupons(cart, coupons)
+apply_coupons(cart, coupons)
