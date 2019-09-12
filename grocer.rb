@@ -10,8 +10,8 @@ def consolidate_cart(cart_array)
       cart_hash[item.keys.first][:count] += 1 
     else 
       cart_hash[item.keys.first] = {
-        price: cart_item_value[:price],
-        clearance: cart_item_value[:clearance],
+        price: item.values.first[:price],
+        clearance: item.values.first[:clearance],
         count: 1
       }
      
