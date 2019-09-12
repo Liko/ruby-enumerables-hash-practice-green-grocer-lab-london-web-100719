@@ -13,7 +13,6 @@ def consolidate_cart(cart)
       }
     end   
   end   
-  puts cart_hash
   cart_hash
 end
 
@@ -48,31 +47,19 @@ def apply_clearance(cart)
   cart 
 end
 
-# def checkout(cart, coupons)
-#   #discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
-#   discounted_cart = consolidate_cart(cart)
-#   # cart2 = apply_coupons(cart1, coupons)
-#   # discounted_cart = apply_clearance(cart2)
-  
-#   total = 0.0 
-  
-#   discounted_cart.keys.each do |item|
-#     total += discounted_cart[item][:price] * discounted_cart[item][:count]
-#   end 
-  
-#   if total > 100
-#     total *= 0.9
-#   end 
-# end
-
 def checkout(cart, coupons)
-  consolidated_cart = consolidate_cart(cart)
-  consolidated_cart_with_coupons_applied = apply_coupons(consolidated_cart, coupons)
-  consolidated_cart_with_coupons_applied_and_discounts = apply_clearance(consolidated_cart_with_coupons_applied)
-
-  total = 0.0
-  consolidated_cart_with_coupons_applied_and_discounts .keys.each do |item|
-    total += consolidated_cart_with_coupons_applied_and_discounts[item][:price] * consolidated_cart_with_coupons_applied_and_discounts[item][:count]
-  end
-  total > 100 ? (total * 0.9).round(2) : total
+  #discounted_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
+  discounted_cart = consolidate_cart(cart)
+  # cart2 = apply_coupons(cart1, coupons)
+  # discounted_cart = apply_clearance(cart2)
+  
+  total = 0.0 
+  
+  discounted_cart.keys.each do |item|
+    total += discounted_cart[item][:price] * discounted_cart[item][:count]
+  end 
+  
+  if total > 100
+    total *= 0.9
+  end 
 end
