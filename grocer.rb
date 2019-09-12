@@ -29,7 +29,6 @@ def apply_coupons(cart, coupons)
     coupon_cost = coupon.values[2]
     
     puts coupon_item
-    if coupon.values[1]
 
   end 
 
