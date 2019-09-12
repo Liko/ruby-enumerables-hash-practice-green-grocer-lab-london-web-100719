@@ -41,6 +41,7 @@ def apply_coupons(cart, coupons)
         clearence: true,
         count: adjusted_num
       }
+    end
     
   end 
   cart
