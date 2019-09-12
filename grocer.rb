@@ -23,6 +23,8 @@ def apply_coupons(cart, coupons)
   
   puts coupons
   
+  puts cart
+  
   
 end
 
