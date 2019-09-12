@@ -28,7 +28,7 @@ def apply_coupons(cart, coupons)
     coupon_num = coupon.values[1]
     coupon_cost = coupon.values[2]
     
-    cart[coupon_item][:count]
+    puts cart[coupon_item][:count]
     
     if (cart[coupon_item])
       puts "yolo"
