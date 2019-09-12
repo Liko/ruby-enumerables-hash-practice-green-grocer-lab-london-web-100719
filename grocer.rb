@@ -13,7 +13,7 @@ def consolidate_cart(cart)
       }
     end   
   end   
-  
+  puts cart_hash
   cart_hash
 end
 
