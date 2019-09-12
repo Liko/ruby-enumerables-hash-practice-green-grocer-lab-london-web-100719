@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
   #check for items which also have a coupon 
   #with these items, check if the count in basket is at least equal to num in coupon, if so, apply the coupon, if not, check the next items
   
-  puts coupons[0].first
+  puts coupons[0].keys
   
   puts cart
   
