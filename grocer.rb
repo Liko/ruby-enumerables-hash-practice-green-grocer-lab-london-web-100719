@@ -29,7 +29,9 @@ def apply_coupons(cart, coupons)
     coupon_cost = coupon.values[2]
     
     if (cart[coupon_item][:count] >= coupon_num)
-      puts "yolo"
+      #apply coupon
+      
+      price_per_coupon_item = coupon_cost / coupon_item
     end
 
     
