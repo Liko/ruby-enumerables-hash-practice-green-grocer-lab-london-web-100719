@@ -15,11 +15,7 @@ def consolidate_cart(cart_array)
         clearance: cart_item_value[:clearance],
         count: 1
       }
-    
-    end   
-    
-    puts cart_hash
-    
+    end  
   end   
 end
 
