@@ -28,13 +28,13 @@ def apply_coupons(cart, coupons)
     coupon_num = coupon[:num]
     coupon_cost = coupon[:cost]
     
-    if (cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon_num)
+    if (cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon[:num])
       
-      adjusted_item = coupon_item + " W/COUPON"
-      adjusted_num = (cart[coupon_item][:count] / coupon_num) * coupon_num
-      adjusted_cost = coupon_cost / coupon_num
+      adjusted_item = coupon[:item] + " W/COUPON"
+      adjusted_num = (cart[coupon[:item]][:count] / coupon[:num]) * coupon[:num]
+      adjusted_cost = coupon[:cost] / coupon[:num]
       
-      cart[coupon_item][:count] = (cart[coupon_item][:count] % coupon_num)
+      cart[coupon[:item]][:count] = (cart[coupon[:item]][:count] % coupon[:num])
       
       cart[adjusted_item] = {
         price: adjusted_cost,
