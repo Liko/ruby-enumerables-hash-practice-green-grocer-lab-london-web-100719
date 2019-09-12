@@ -41,9 +41,7 @@ def apply_coupons(cart, coupons)
         clearence: true,
         count: adjusted_num
       }
-      
-    elsif
-    end
+    
   end 
   cart
   
