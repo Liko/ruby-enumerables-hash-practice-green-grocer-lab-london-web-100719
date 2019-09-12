@@ -24,7 +24,7 @@ def apply_coupons(cart, coupons)
     
 
 
-    if (cart.keys.include?(coupon[:item] && cart[coupon[:item]][:count] >= coupon[:num])
+    if (cart.keys.include?(coupon[:item]) && cart[coupon[:item]][:count] >= coupon[:num])
       
       adjusted_item = coupon[:item] + " W/COUPON"
       adjusted_num = (cart[coupon[:item]][:count] / coupon[:num]) * coupon[:num]
