@@ -28,7 +28,7 @@ def apply_coupons(cart, coupons)
     coupon_num = coupon.values[1]
     coupon_cost = coupon.values[2]
     
-    puts coupon_item
+    puts coupon_num
 
   end 
 
