@@ -9,6 +9,7 @@ def consolidate_cart(cart_array)
     
     puts "key"
     puts cart_item_key 
+    puts "value"
     puts cart_item_value 
     
     if cart_hash[cart_item_key]
