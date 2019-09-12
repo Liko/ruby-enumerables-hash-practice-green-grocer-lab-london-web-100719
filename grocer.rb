@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
     
     puts cart[coupon_item][:count]
     
-    if (cart[coupon_item])
+    if (cart[coupon_item] && cart[coupon_item][:count] >= coupon_num)
       puts "yolo"
     end
 
