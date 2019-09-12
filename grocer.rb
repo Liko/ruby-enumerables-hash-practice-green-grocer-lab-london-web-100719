@@ -6,7 +6,7 @@ def consolidate_cart(cart_array)
     
    
       
-    cart_item = cart_array.item
+    cart_item = cart_array[item]
     cart_item_key = cart_item.keys.first
     cart_item_value = cart_item.values
     
