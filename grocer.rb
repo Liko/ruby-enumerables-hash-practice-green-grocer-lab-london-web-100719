@@ -22,7 +22,7 @@ def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
 
-    if (cart[coupon[:item]] && cart[coupon[:item]][:count] >= coupon[:num])
+    if (cart[coupon[:item]] == coupon[:item] && cart[coupon[:item]][:count] >= coupon[:num])
       
       adjusted_item = coupon[:item] + " W/COUPON"
       adjusted_num = (cart[coupon[:item]][:count] / coupon[:num]) * coupon[:num]
