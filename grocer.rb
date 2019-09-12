@@ -9,7 +9,7 @@ def consolidate_cart(cart_array)
     puts cart_item_key
     
     if cart_hash[cart_item_key]
-      cart_hash[cart_item_key][:count] += 1 
+      cart_hash[cart_item_key][:count].value += 1 
     else 
       cart_hash[cart_item_key] = cart_item_key
       # cart_hash[cart_item_key][cart_item] = cart_item 
