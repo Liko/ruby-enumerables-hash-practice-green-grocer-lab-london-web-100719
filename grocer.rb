@@ -54,7 +54,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  
+  consolidate_cart
 end
 
 # coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
