@@ -40,6 +40,12 @@ def apply_coupons(cart, coupons)
       puts adjusted_item
       puts adjusted_num
       puts adjusted_cost
+      
+      cart[adjusted_item] = {
+        price: adjusted_cost,
+        clearence: true,
+        count: adjusted_num
+      }
 
     end
 
