@@ -8,6 +8,12 @@ def consolidate_cart(cart_array)
     
     puts cart_item_key
     
+    if cart_hash[cart_item_key]
+      cart_hash[cart_item_key][:count] += 1 
+    else 
+      
+    end   
+    
     
   end   
 end
