@@ -65,14 +65,14 @@ def checkout(cart, coupons)
   end 
 end
 
-coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
+# coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
 
-cart = [
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"KALE"    => {:price => 3.00, :clearance => false}}
-]
+# cart = [
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"KALE"    => {:price => 3.00, :clearance => false}}
+# ]
 
-# apply_coupons(cart, coupons)
-# apply_clearance(cart)
-checkout(cart, coupons)
+# # apply_coupons(cart, coupons)
+# # apply_clearance(cart)
+# checkout(cart, coupons)
