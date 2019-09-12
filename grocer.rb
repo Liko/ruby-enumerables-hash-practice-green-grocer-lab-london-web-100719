@@ -36,7 +36,7 @@ def apply_coupons(cart, coupons)
       else 
         cart[adjusted_item] = {
           price: adjusted_cost,
-          clearance: ,
+          clearance: adjusted_clearance
           count: adjusted_num
         }
       end
