@@ -33,6 +33,8 @@ def apply_coupons(cart, coupons)
       
       adjusted_item = coupon_item + "W/COUPON"
       adjusted_price = coupon_cost / coupon_item
+      
+      puts adjusted_item
     end
 
     
