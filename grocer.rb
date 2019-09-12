@@ -66,3 +66,9 @@ def checkout(cart, coupons)
     total *= 0.9
   end 
 end
+
+cart = [
+  {"AVOCADO" => {:price => 3.00, :clearance => true }},
+  {"AVOCADO" => {:price => 3.00, :clearance => true }},
+  {"KALE"    => {:price => 3.00, :clearance => false}}
+]
