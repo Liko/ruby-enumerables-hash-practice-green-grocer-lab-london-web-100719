@@ -31,7 +31,7 @@ def apply_coupons(cart, coupons)
       adjusted_cost = coupon[:cost] / coupon[:num]
     
       
-      cart[coupon[:item]][:count] = (cart[coupon[:item]][:count] % coupon[:num])
+      cart[coupon[:item]][:count] -= (cart[coupon[:item]][:count] % coupon[:num])
       
       if cart[adjusted_item]
         cart[adjusted_item][:count] += coupon[:num]
